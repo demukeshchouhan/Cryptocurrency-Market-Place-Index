@@ -1,6 +1,5 @@
 ### Admin Dashboard
 Cryptocurrency Dashboard built with React, SASS, Rechart
-
-# Work in process !!!
+Live Demo : will update soon
 #### Screenshot
-![](https://raw.githubusercontent.com/demukeshchouhan/Cryptocurrency-Market-Place-Index/master/demo.jpg)
+![](https://github.com/demukeshchouhan/Cryptocurrency-Market-Place-Index/blob/master/demo.png)
