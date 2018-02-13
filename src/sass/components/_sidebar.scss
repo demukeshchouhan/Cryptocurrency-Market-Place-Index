@@ -1,0 +1,131 @@
+.sidebar {
+	background: $sidebar_color1;
+	width: $sidebar-width;
+	max-height: 100%;
+    height: 100%;
+	display: block;
+	position: fixed;
+	top:0;
+	left: 0;
+	bottom: 0;
+	box-shadow: 0 .5rem 3rem rgba(0,0,0,0.3);
+	transition: all .4s;
+	backface-visibility: hidden;
+	overflow: hidden;
+	z-index: 1000;
+	overflow: hidden;
+	
+	&__wrapper{
+		width: inherit;
+		height: 100%;
+		position: relative;
+		// overflow: auto;
+	}
+
+	&.open{
+		left : 0rem;
+	}
+	&.close{
+		left : -9rem;
+	}
+	
+
+	&__user-profile{
+		display: block;
+		width: 100%;
+		height: $sidebar-width;
+
+		&-img-box{
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 100%;
+			@include clearfix;
+			
+		}
+
+		&-img{
+			max-width:100%;
+			height: 100%;
+			display: block;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+
+		&-notification{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width:$sidebar-profile-noti-width;
+			height: $sidebar-profile-noti-height;
+			color: #fff;
+			text-align: center;
+			background: rgba($sidebar_color1, .9);
+			z-index: 10;
+			padding: 1rem;
+			font-size: 1.1rem;
+		}
+	}
+
+	&__white-space {
+		width: 100%;
+		height:120px;
+		background: #fff;
+	}
+
+	&__navbar {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background: inherit;
+
+		&-wrapper {
+			display: block;
+			list-style: none;
+			margin-top: 2rem;
+			width: 100%;
+			height: 100%;
+			background: inherit;
+
+			li {
+				display: block;
+				text-align: center;
+
+				a{
+					&:link,
+					&:visited {
+						padding: 2rem 1rem;
+						text-decoration: none;
+						display: block;
+						transition: all .3s;
+						color: #fff;
+					}
+					
+					&:hover{
+						color :$link-hover;
+					}
+				}
+
+				&:last-child {
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+				}
+				
+
+			}
+		}
+
+		&-icon {
+			font-size: 2.2rem;
+			text-align: center;
+
+			&:hover{
+				color :$link-hover;
+			}
+		}
+	}
+
+	
+}

@@ -1,0 +1,59 @@
+.balance__bar {
+	&-header{
+		font-weight: 600;
+		display: block;
+		margin-bottom: 2rem;
+	}
+	&--col-1{
+		display: block;
+		@include clearfix;
+		margin-bottom: 5rem;
+
+		&-price{
+			font-size: 1.2rem;
+		}
+	}
+	&--col-1-links{
+		
+	}
+
+	&--text-wrapper{
+		margin-top: .5rem;
+	}
+
+	&-text{
+		font-size: 1.4rem;
+		&:not(:last-child) {
+			padding-right: 1rem;
+		}
+		
+	}
+
+	&--col-2{
+		display: block;
+
+		
+	}
+	
+
+}
+
+.link__btn{
+	color: $sidebar_color1;
+	background: #fff;
+	padding: 1rem 2.5rem;
+	border: none;
+	box-shadow: 0 .3rem .5rem rgba(0,0,0,0.1);
+	&:not(:last-child) {
+		margin-right: 1.5rem;
+	}
+	&-icon {
+		font-size: 1.6rem;
+		display: block;	
+	}
+
+	&-text {
+		font-size: 1.4rem;
+		display: block;
+	}
+}

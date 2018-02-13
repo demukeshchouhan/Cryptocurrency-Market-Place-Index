@@ -1,0 +1,23 @@
+.heading-1{
+	font-size: $heading-size-1;
+	color: $blue-shade-1;
+}
+
+.primary-heading{
+    font-size: 1.3rem;
+    color: $heading-color;
+}
+
+.heading{
+
+    &-small{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    &-large{
+        font-size: 2.9rem;
+    }
+}
+
+

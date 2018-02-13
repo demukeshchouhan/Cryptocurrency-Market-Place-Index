@@ -1,0 +1,44 @@
+.chart {
+	margin-top: 5rem;
+	&__topbar {
+		display: block;
+		width: 100%;
+
+		&-heading{
+			display: inline-block;	
+			font-size: 1.6rem;
+			font-weight: 600;
+		}
+		&-currency{
+			display: inline-block;
+			padding: 0 1rem;
+			
+			&--icon{
+				display: inline-block;
+				padding: 0 1rem;
+				color: $blue-shade-1;
+			}
+			&--text{
+				display: inline-block;
+				text-transform: uppercase;
+			}
+		}
+		&-nav{
+			list-style:none;
+			padding-right: 2rem;
+
+			&--item{
+				display: inline-block;
+				cursor: pointer;
+				color: #333;
+				padding: .5rem 1rem;
+
+				&.active{
+					color: #fff;
+					background: $blue-shade-1;
+
+				}
+			}
+		}
+	}
+}

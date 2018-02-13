@@ -1,0 +1,52 @@
+.topbar {
+	width: 100%;
+
+	&.open {
+		transition: all 0.4s ease-out;
+		left: 9rem;
+		transform: translateX(0px);
+	}
+
+	&.close {
+		transition: all 0.4s ease-out;
+		left: 0;
+		transform: translateX(0px);
+	}
+
+	&-chev-icon{
+		display: block;
+		height: 100%;
+		line-height: 4;
+		border-right: 1px solid #ddd;
+		cursor: pointer;
+	}
+	&__heading{
+		display: block;
+		height: 100%;
+		font-size: 2.5rem;
+		font-weight: 300;
+	}
+
+	&__nav{
+		list-style: none;
+		display: block;
+
+		li{
+			display: inline-block;
+			padding: 1rem;
+			line-height: 3;
+		}
+
+		&-text{
+			font-size: 1.4rem;
+		}
+	
+		&-icon{
+			font-size: 1.8rem;
+			color: $light-grey;
+			cursor: pointer;
+		}
+	}
+
+	
+}

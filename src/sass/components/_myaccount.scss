@@ -1,0 +1,47 @@
+.myaccount {
+	padding-left: 5rem;
+
+	&__filter {
+		
+		&-bar {
+			margin-bottom: 2rem;
+			display: block;
+			width: 100%;
+			line-height: 3.5;
+		}
+
+		&-text {
+			font-size: 1.3rem;
+			color: #bbb;
+			line-height: 1;
+
+		}
+
+		
+
+		&-header {
+			padding-right: 1rem;
+			font-weight: 600;
+		}
+		&-icon {
+			padding: .2rem 1rem;
+			cursor: pointer;
+
+			&-2{
+				color: #ccc;
+				font-size: .9rem;
+				padding: .5rem 1rem;
+				cursor: default;
+			}
+		}
+
+	}
+
+	&-carousel {
+		&-item {
+			width:100%;
+			height:100%;
+		}
+	}
+}
+
