@@ -45,6 +45,10 @@
 			font-size: 1.8rem;
 			color: $light-grey;
 			cursor: pointer;
+
+			&.active{
+				color: $blue-shade-1;
+			}
 		}
 	}
 

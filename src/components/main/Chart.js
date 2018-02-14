@@ -61,12 +61,12 @@ export default class Chart extends Component {
           data={this.state.data}
           layout = "horizontal"
         >
-          <CartesianGrid strokeDasharray="2 2" vertical={false}/>
+          <CartesianGrid strokeDasharray="2 2" vertical={false} />
           <XAxis dataKey="name" tickLine={false} axisLine={false}/>
           <YAxis tickLine={false} axisLine={false}/>
           <Tooltip />
           <Legend />
-          <Line type="monotone" strokeWidth={4} dataKey="value" stroke="#225bf4" dot={{ stroke: '#225bf4', strokeWidth: 1, r: 5 }} />
+          <Line type="monotone" strokeWidth={3} dataKey="value" stroke="#225bf4" dot={{ stroke: '#225bf4', strokeWidth: 1, r: 5 }} />
         </LineChart>
           </ResponsiveContainer>
         </Col>

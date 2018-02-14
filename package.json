@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "serve": "webpack-dev-server",
-    "clean": "rimraf public",
-    "dev": "npm run clean && webpack"
+    "clean": "rimraf build",
+    "dev": "npm run clean && webpack",
+    "prod": "npm run clean && webpack -p"
   },
   "keywords": [],
   "author": "",

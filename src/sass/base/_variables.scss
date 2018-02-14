@@ -3,6 +3,7 @@ $blue-shade-1 : #4c84ff;
 $base-white : #fff;
 
 $green : #3cce61;
+$red : rgb(230, 55, 55);
 $body_color : #f2f4fa;
 $text_color : #999;
 $sidebar_color1 : #225bf4;
@@ -34,5 +35,19 @@ $color5: rgba(239, 118, 122, 1);
 // font
 $root-font : 62.5%;
 $base-font: 1.6rem;
+
+$font-min-320: 1.6rem;
+$font-min-480: 1.4rem;
+$font-min-768: 1.2rem;
+$font-min-992: 1rem;
+$font-min-1200: .9rem;
+
+
+$font-max-320: 1.6rem;
+$font-max-480: 1.6rem;
+$font-max-768: 1.6rem;
+$font-max-992: 1.6rem;
+$font-max-1200: 1.6rem;
+
 $heading-size-1 : 1.8rem;
 

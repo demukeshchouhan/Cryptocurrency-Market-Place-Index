@@ -20,7 +20,7 @@ export class Main extends Component{
   render() {
     return (
       <div 
-        className={this.props.sidebar ? "col-md-11 col-md-offset-1" : "col-md-12 col-md-offset-0"}
+        className={this.props.sidebar ? "col-sm-11 col-sm-offset-1" : "col-sm-12 col-sm-offset-0"}
         style={!this.props.sidebar ? {"paddingLeft": "3rem"} :  null}
       >
       <div className="main__interface">
@@ -31,6 +31,9 @@ export class Main extends Component{
         </Row>
         <Row>
         <Chart />
+        </Row>
+        <Row>
+          <StatsBar />
         </Row>
       </div>
       </div>

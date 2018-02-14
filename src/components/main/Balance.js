@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 import FontAwesome from "react-fontawesome";
-
+import { ResponsiveContainer, LineChart, Line,Tooltip, Legend } from 'recharts';
 import { 
   Grid, Row, Col, Image, Button
 } from "react-bootstrap";
 
 
 export default class Balance extends Component {
+  state = {
+    data : [
+      {name: 'Page A', uv: 4000, pv: 2400, amt: 2400},
+      {name: 'Page B', uv: 3000, pv: 1398, amt: 2210},
+      {name: 'Page C', uv: 2000, pv: 9800, amt: 2290},
+      {name: 'Page D', uv: 2780, pv: 3908, amt: 2000},
+      {name: 'Page E', uv: 1890, pv: 4800, amt: 2181},
+      {name: 'Page F', uv: 2390, pv: 3800, amt: 2500},
+      {name: 'Page G', uv: 3490, pv: 4300, amt: 2100},
+    ]
+  }
   render() {
     return (
       <div className="balance__bar">
@@ -51,15 +62,12 @@ export default class Balance extends Component {
             <span className="heading-small bold-800">+ $</span>
             <span className="heading-large"> 195</span>
             <div className="balance__bar-graph">
-              <div className="progress">
-              <div className="progress-bar progress-bar-primary" 
-                role="progressbar" 
-                aria-valuenow="40" 
-                aria-valuemin="30" 
-                aria-valuemax="100" 
-                style={{"width": "40%"}}></div>
-              </div>
-            </div>
+            <ResponsiveContainer width={"100%"} height={80} >
+              <LineChart data={this.state.data}>
+                <Line type='monotone' dataKey='pv' stroke='#3cce61' strokeWidth={2} dot={false}/>
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
           </div>
           </div>
           <div className="col-md-6">
@@ -68,20 +76,17 @@ export default class Balance extends Component {
             <span className="heading-small bold-800">$</span>
             <span className="heading-large"> 3763</span>
             <div className="balance__bar-graph">
-              <div className="progress">
-              <div className="progress-bar progress-bar-success" 
-                role="progressbar" 
-                aria-valuenow="40" 
-                aria-valuemin="30" 
-                aria-valuemax="100" 
-                style={{"width": "70%"}}></div>
-              </div>
+            <ResponsiveContainer width={"100%"} height={80} >
+              <LineChart data={this.state.data}>
+                <Line type='monotone' dataKey='pv' stroke='#3cce61' strokeWidth={2} dot={false}/>
+              </LineChart>
+            </ResponsiveContainer>
             </div>
           </div>
           </div>
         </div>
         </div>
-      </div>
+        </div>
     )
   }
 }

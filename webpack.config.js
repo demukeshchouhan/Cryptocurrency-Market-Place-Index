@@ -15,7 +15,7 @@ module.exports = {
 
 	},
 	output : {
-		path : path.resolve(__dirname, "public"),
+		path : path.resolve(__dirname, "build"),
 		filename : "[name].[chunkhash].js",
 		publicPath : "/"
 	},
@@ -37,7 +37,7 @@ module.exports = {
 	},
 	devtool : "source-map",
 	devServer: {
-		contentBase : path.resolve(__dirname, "public"),
+		contentBase : path.resolve(__dirname, "build"),
 		historyApiFallback: true,
         compress: true
 	},
@@ -48,7 +48,8 @@ module.exports = {
 		}),
 		new webpack.optimize.CommonsChunkPlugin({
 			names : ["vendor", "manifest"]
-		})
+		}),
+		// new UglifyJSPlugin()
 	],
 	resolve : {
         extensions : [".js", ".jsx", ".scss"]

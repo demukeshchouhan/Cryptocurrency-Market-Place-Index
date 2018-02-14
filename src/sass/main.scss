@@ -13,8 +13,8 @@
 @import "components/balancebar";
 @import "components/myaccount";
 @import "components/chart";
+@import "components/statsbar";
 // @import "components/header";
-// @import "components/stats-bar";
 // @import "components/carousel";
 
 // theme
@@ -27,3 +27,4 @@
 // pages
 // utils
 @import "utils/helpers";
+@import "utils/media-queries";

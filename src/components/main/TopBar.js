@@ -30,7 +30,7 @@ class TopBar extends Component {
             <div className="col-md-8 ">
               <ul className="topbar__nav pull-right">
               <li className="topbar__nav-text">Page Style</li>
-              <li><FontAwesome name="th" className="topbar__nav-icon"/></li>
+              <li><FontAwesome name="th" className="topbar__nav-icon active"/></li>
               <li><FontAwesome name="bars" className="topbar__nav-icon"/></li>
               </ul>
             </div>

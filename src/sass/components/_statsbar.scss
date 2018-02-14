@@ -1,0 +1,79 @@
+.statsbar {
+	background: #fff;
+	width:80%;
+	height: 8rem;
+	display: block;
+	position: absolute;
+	bottom:-15rem;
+	right:0;
+	padding: .3rem .5rem;
+	transition: all .5s;
+
+	&__nav {
+		list-style: none;
+		margin-bottom: 0;
+
+		
+		
+		&-item {
+			display: inline-block;
+			padding: 1rem;
+			&:not(:last-child) {
+				padding-right: 3rem;
+			}
+
+			&--text {
+				display: block;
+				font-size: 1.4rem;
+			}
+
+			&--heading {
+				display: inline-block;
+				font-size: 2.3rem;
+				&-sub{
+					font-size: 1.4rem;
+					vertical-align: super;
+					padding-left: .5rem;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+
+	&__toggle {
+		display: inline-block;
+		padding: 1rem 2rem;
+		line-height: 3;
+		cursor: pointer;
+		font-size: 2rem;
+		color: $blue-shade-1;
+	}
+
+}
+
+.statsbar.slideInLeft{
+	width: 80%;
+	// overflow: auto;
+}
+
+.statsbar.slideOutRight{
+	width: 9rem;
+	overflow: hidden;
+	// visibility: hidden;
+    // opacity: 0;
+    // transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+
+.statsbar__nav.slideInLeft{
+	width: 100%;
+	// overflow: auto;
+}
+
+.statsbar__nav.slideOutRight{
+	width: 0;
+	overflow: hidden;
+	visibility: hidden;
+    opacity: 0;
+    // transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+
